@@ -1,0 +1,32 @@
+name: Automaticka aktualizacia IPTV
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # Spustí sa automaticky každé ráno o 4:00 UTC
+  workflow_dispatch:     # Umožní ti spustiť aktualizáciu aj manuálne kliknutím
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Klonovanie repozitara
+      uses: actions/checkout@v4
+
+    - name: Nastavenie Pythonu
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Instalacia kniznice requests
+      run: pip install requests
+
+    - name: Spustenie skriptu
+      run: python merge.py
+
+    - name: Nahranie aktualizovaneho suboru
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
+        git add sk_cz_iptv.m3u
+        git commit -m "Automaticky update playlistu" || exit 0
+        git push
