@@ -1,4 +1,5 @@
 import requests
+import re
 
 # Zdrojové URL adresy z iptv-org
 urls = [
@@ -6,7 +7,7 @@ urls = [
     "https://iptv-org.github.io/iptv/countries/cz.m3u"
 ]
 
-# Nové, funkčné EPG príručky z epgshare01 (vo formáte .gz, ktorý ProgDVB sám rozbalí)
+# Nové, funkčné EPG príručky z epgshare01
 epg_sk = "https://epgshare01.online/epgshare01/epg_ripper_SK1.xml.gz"
 epg_cz = "https://epgshare01.online/epgshare01/epg_ripper_CZ1.xml.gz"
 
@@ -22,6 +23,20 @@ for url in urls:
             
             for line in lines[start_idx:]:
                 if line.strip():
+                    # Ak riadok obsahuje info o stanici, očistíme jej finálny názov
+                    if line.startswith("#EXTINF"):
+                        parts = line.rsplit(",", 1)
+                        if len(parts) == 2:
+                            inf_part, name_part = parts[0], parts[1]
+                            
+                            # Odstránime (720p), [Not 24/7], (1080p), [Geo-blocked] atď.
+                            cleaned_name = re.sub(r'\s*\(\d+p\)', '', name_part)  # Vymaže (720p), (1080p)...
+                            cleaned_name = re.sub(r'\s*\[.*?\]', '', cleaned_name) # Vymaže všetko v hranatých zátvorkách
+                            cleaned_name = cleaned_name.replace("STV1", "").replace("STV2", "") # Očista pre RTVS/STVR
+                            cleaned_name = " ".join(cleaned_name.split()) # Vyčistí duplicitné medzery
+                            
+                            line = f"{inf_part},{cleaned_name}"
+                    
                     merged_content.append(line)
         else:
             print(f"Chyba pri sťahovaní {url}: Status {response.status_code}")
@@ -31,4 +46,4 @@ for url in urls:
 with open("sk_cz_iptv.m3u", "w", encoding="utf-8") as f:
     f.write("\n".join(merged_content))
 
-print("Playlist s novým EPG bol úspešne spojený!")
+print("Playlist s vyčistenými názvami a EPG bol úspešne vytvorený!")
