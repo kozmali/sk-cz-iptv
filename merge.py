@@ -23,17 +23,20 @@ for url in urls:
             
             for line in lines[start_idx:]:
                 if line.strip():
-                    # Ak riadok obsahuje info o stanici, očistíme jej finálny názov
+                    # Ak riadok obsahuje info o stanici, upravíme ho
                     if line.startswith("#EXTINF"):
                         parts = line.rsplit(",", 1)
                         if len(parts) == 2:
                             inf_part, name_part = parts[0], parts[1]
                             
-                            # Odstránime (720p), [Not 24/7], (1080p), [Geo-blocked] atď.
-                            cleaned_name = re.sub(r'\s*\(\d+p\)', '', name_part)  # Vymaže (720p), (1080p)...
-                            cleaned_name = re.sub(r'\s*\[.*?\]', '', cleaned_name) # Vymaže všetko v hranatých zátvorkách
-                            cleaned_name = cleaned_name.replace("STV1", "").replace("STV2", "") # Očista pre RTVS/STVR
-                            cleaned_name = " ".join(cleaned_name.split()) # Vyčistí duplicitné medzery
+                            # ÚPLNÉ VYMAZANIE TVG-ID, aby ProgDVB musel párovať podľa názvov
+                            inf_part = re.sub(r'tvg-id="[^"]*"', '', inf_part)
+                            
+                            # Odstránime (720p), [Not 24/7], (1080p) atď.
+                            cleaned_name = re.sub(r'\s*\(\d+p\)', '', name_part)
+                            cleaned_name = re.sub(r'\s*\[.*?\]', '', cleaned_name)
+                            cleaned_name = cleaned_name.replace("STV1", "").replace("STV2", "")
+                            cleaned_name = " ".join(cleaned_name.split())
                             
                             line = f"{inf_part},{cleaned_name}"
                     
@@ -46,4 +49,4 @@ for url in urls:
 with open("sk_cz_iptv.m3u", "w", encoding="utf-8") as f:
     f.write("\n".join(merged_content))
 
-print("Playlist s vyčistenými názvami a EPG bol úspešne vytvorený!")
+print("Playlist úspešne vytvorený bez problémových ID!")
