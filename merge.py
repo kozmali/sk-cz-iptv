@@ -1,11 +1,17 @@
 import requests
 
+# Zdrojové URL adresy z iptv-org
 urls = [
     "https://iptv-org.github.io/iptv/countries/sk.m3u",
     "https://iptv-org.github.io/iptv/countries/cz.m3u"
 ]
 
-merged_content = ["#EXTM3U"]
+# Oficiálne a funkčné EPG príručky priamo od iptv-org
+epg_sk = "https://iptv-org.github.io/epg/guides/sk.xml"
+epg_cz = "https://iptv-org.github.io/epg/guides/cz.xml"
+
+# Spojenie oboch EPG do hlavičky (oddelené čiarkou)
+merged_content = [f'#EXTM3U url-tvg="{epg_sk},{epg_cz}"']
 
 for url in urls:
     try:
@@ -25,4 +31,4 @@ for url in urls:
 with open("sk_cz_iptv.m3u", "w", encoding="utf-8") as f:
     f.write("\n".join(merged_content))
 
-print("Playlisty boli úspešne spojené!")
+print("Playlist s oficiálnym EPG bol úspešne spojený!")
