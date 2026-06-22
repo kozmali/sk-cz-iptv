@@ -6,9 +6,9 @@ urls = [
     "https://iptv-org.github.io/iptv/countries/cz.m3u"
 ]
 
-# Oficiálne a funkčné EPG príručky priamo od iptv-org
-epg_sk = "https://iptv-org.github.io/epg/guides/sk.xml"
-epg_cz = "https://iptv-org.github.io/epg/guides/cz.xml"
+# Nové, funkčné EPG príručky z epgshare01 (vo formáte .gz, ktorý ProgDVB sám rozbalí)
+epg_sk = "https://epgshare01.online/epgshare01/epg_ripper_SK1.xml.gz"
+epg_cz = "https://epgshare01.online/epgshare01/epg_ripper_CZ1.xml.gz"
 
 # Spojenie oboch EPG do hlavičky (oddelené čiarkou)
 merged_content = [f'#EXTM3U url-tvg="{epg_sk},{epg_cz}"']
@@ -31,4 +31,4 @@ for url in urls:
 with open("sk_cz_iptv.m3u", "w", encoding="utf-8") as f:
     f.write("\n".join(merged_content))
 
-print("Playlist s oficiálnym EPG bol úspešne spojený!")
+print("Playlist s novým EPG bol úspešne spojený!")
