@@ -14,19 +14,20 @@ CHANNEL_MAPPING = {
     "JOJ Plus": "JOJ.Plus.sk",
     "Dajto": "Dajto.sk",
 
-    "ČT1": "T1.sk",
-    "ČT 1": "T1.sk",
-    "ČT2": "T2.sk",
-    "ČT 2": "T2.sk",
-    "ČT24": "T24.sk",
-    "ČT 24": "T24.sk",
+    "ČT1": "ČT1.HD.sk",
+    "ČT 1": "ČT1.HD.sk",
+    "ČT2": "ČT2.HD.sk",
+    "ČT 2": "ČT2.HD.sk",
+    "ČT24": "ČT24.HD.sk",
+    "ČT 24": "ČT24.HD.sk",
 
     "Mňau": "Mňau.TV.cz",
     "Ocko Black": "ÓČKOBlack.cz",
     "Óčko Expres": "ÓČKOEXPRES.cz",
     "Óčko Star": "ÓČKOSTAR.cz",
-    "Šlágr Originál": "ŠLÁGRORIGINÁL.cz",
-    "Šlágr Premium": "ŠLÁGRPREMIUM.cz",
+    "Šláger Originál": "Šláger.Originál.HD.sk",
+    "Šláger Muzika": "Šláger.Muzika.HD.sk",
+    
     "TV Lux": "Lux.TV.HD.sk",
     "Retro Music Television": "RETRO.Music.TV.sk",
     "Televize Seznam": "Televize.Seznam.HD.sk",
@@ -64,7 +65,26 @@ CHANNEL_MAPPING = {
     "ČT:D/ČT art": "ČT:D/ČTart.cz",
 
     ":Šport": "RTVS.SPORT.cz",
-    ":24": "24.sk",
+    ":24": ":24.HD.sk",
+
+    "TV Doktor": "TV.Doktor.cz",
+    "LifeTV": "LifeTV.cz",
+    "JOJ Šport 2": "JOJ.Šport.2.cz",
+    "Markíza Klasik": "Markíza.Klasik.HD.sk",
+    "Západoslovenská televízia": "Západoslovenská.televízia.cz",
+    "POLAR": "POLAR.cz",
+    "Polar TV.sk": "Polar TV.sk",
+    "ČRo Plzeň.cz": "POLAR.cz",
+    "ČRo Plzeň.cz": "ČRo Plzeň.cz",
+    
+    "Liptov": "Liptov.cz",
+    "Mestská televízia Ružomberok": "Mestská.televízia.Ružomberok.cz",
+    "TVT": "TVT.cz",
+    "Miestna TV Trebišov.sk": "Miestna TV Trebišov.sk",
+    "TV9 KTV": "TV9.KTV.cz",
+    "TV Nitrička.sk": "TV Nitrička.sk",
+    "TV9 KTV'": "TV9.KTV.cz",
+    "TV9 KTV'": "TV9.KTV.cz",
 }
 
 # Zdrojové URL adresy z iptv-org
@@ -82,8 +102,8 @@ merged_content = [f'#EXTM3U url-tvg="{merged_epg_url}"']
 def clean_channel_name(name: str) -> str:
     name = re.sub(r'\s*\(\d+p\)', '', name)
     name = re.sub(r'\s*\[.*?\]', '', name)
-    name = name.replace("STV1", "Jednotka")
-    name = name.replace("STV2", "Dvojka")
+    name = re.sub(r'\s*STV1\b', '', name)   # bolo: name.replace("STV1", "Jednotka")
+    name = re.sub(r'\s*STV2\b', '', name)   # bolo: name.replace("STV2", "Dvojka")
     name = name.replace("CzechRepublic", "Czech Republic")
     name = " ".join(name.split())
     return name.strip()
