@@ -1,7 +1,7 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/kozmali/sk-cz-epg/refs/heads/main/epg.xml.gz"
 #EXTINF:-1 tvg-id="RTVS.SPORT.cz" tvg-name=":Šport" tvg-logo="https://i.imgur.com/oAtcxNZ.png" group-title="Sports",:Šport
 http://88.212.15.27/live/test_rtvs_sport_hevc/playlist.m3u8
-#EXTINF:-1 tvg-id="24.sk" tvg-name=":24" tvg-logo="https://i.imgur.com/tTCuczU.png" group-title="News",:24
+#EXTINF:-1 tvg-id=":24.HD.sk" tvg-name=":24" tvg-logo="https://i.imgur.com/tTCuczU.png" group-title="News",:24
 http://88.212.15.27/live/test_trojka_25p/playlist.m3u8
 #EXTINF:-1 tvg-id="AMC.cz" tvg-name="AMC Europe Czech Republic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Movies",AMC Europe Czech Republic
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
@@ -21,7 +21,7 @@ http://82.78.243.219:45739/play/a00n/index.m3u8
 https://dash4.antik.sk/live/test_barrandov_plus_atk_1200/playlist.m3u8
 #EXTINF:-1 tvg-name="Disney Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/2022_Disney_Channel_logo.svg" group-title="Kids",Disney Channel
 http://88.212.15.19/live/test_disney/playlist.m3u8
-#EXTINF:-1 tvg-name="Dvojka Dvojka" tvg-logo="https://i.imgur.com/ft10wQn.png" group-title="Documentary",Dvojka Dvojka
+#EXTINF:-1 tvg-id="Dvojka.HD.sk" tvg-name="Dvojka" tvg-logo="https://i.imgur.com/ft10wQn.png" group-title="Documentary",Dvojka
 https://n5.stv.livebox.sk/stv-tv/addfd31846e34200883cc2b4e9e6c855/stv2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="FILMBOXEXTRA.cz" tvg-name="FilmBox+ Emotion Czech Republic" tvg-logo="https://i.imgur.com/ML7SlIW.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Movies",FilmBox+ Emotion Czech Republic
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
@@ -35,7 +35,7 @@ http://88.212.15.19/live/test_filmbox_plus_atk_1200/playlist.m3u8
 #EXTINF:-1 tvg-id="FILMBOX.cz" tvg-name="FilmBox+ One Czech Republic" tvg-logo="https://i.imgur.com/VyaslIY.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Movies",FilmBox+ One Czech Republic
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 http://88.212.15.19/live/test_filmbox/playlist.m3u8
-#EXTINF:-1 tvg-name="Jednotka Jednotka" tvg-logo="https://i.imgur.com/aqVki9i.png" group-title="General",Jednotka Jednotka
+#EXTINF:-1 tvg-id="Jednotka.HD.sk" tvg-name="Jednotka" tvg-logo="https://i.imgur.com/aqVki9i.png" group-title="General",Jednotka
 https://n4.stv.livebox.sk/stv-tv/fe09ae603df84846978c9d960f699900/stv1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Kino.Barrandov.HD.sk" tvg-name="Kino Barrandov" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Kino_Barrandov_logo.png/960px-Kino_Barrandov_logo.png" group-title="Movies",Kino Barrandov
 http://83.167.253.107/hdmi1_ext
@@ -112,7 +112,7 @@ http://95.105.193.219:88/hls/tvst.m3u8
 http://88.212.7.11/live/test_tv_vega_web_player/playlist.m3u8
 #EXTINF:-1 tvg-name="TV Vita" tvg-logo="https://i.imgur.com/Cx1GLbo.png" group-title="Culture",TV Vita
 https://dash3.antik.sk/live/test_vita/playlist.m3u8
-#EXTINF:-1 tvg-name="TVT" tvg-logo="https://i.imgur.com/QG0iZlG.png" group-title="Undefined",TVT
+#EXTINF:-1 tvg-id="TVT.cz" tvg-name="TVT" tvg-logo="https://i.imgur.com/QG0iZlG.png" group-title="Undefined",TVT
 https://5ca49f2417d90.streamlock.net/live/turzovka/playlist.m3u8
 #EXTINF:-1 tvg-name="VIO TV" tvg-logo="https://i.imgur.com/7EL3VZ5.png" group-title="Undefined",VIO TV
 http://slovanet-livestream.ceelabs.com:1935/live/VioTV.stream_transcoded/playlist.m3u8
@@ -137,11 +137,11 @@ http://88.212.15.19/live/test_white/playlist.m3u8
 https://dash4.antik.sk/live/test_barrandov_plus_atk_1200/playlist.m3u8
 #EXTINF:-1 tvg-name="CNN Prima News" tvg-logo="https://i.imgur.com/elZyUjX.png" group-title="News",CNN Prima News
 http://88.212.15.19/live/test_cnn_pirma_news/playlist.m3u8
-#EXTINF:-1 tvg-id="T1.sk" tvg-name="ČT 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/%C4%8CT1_logo_2012.svg/960px-%C4%8CT1_logo_2012.svg.png" group-title="General",ČT 1
+#EXTINF:-1 tvg-id="ČT1.HD.sk" tvg-name="ČT 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/%C4%8CT1_logo_2012.svg/960px-%C4%8CT1_logo_2012.svg.png" group-title="General",ČT 1
 http://88.212.15.19/live/test_ct1_25p/playlist.m3u8
-#EXTINF:-1 tvg-id="T2.sk" tvg-name="ČT 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/%C4%8CT2_logo_2012.svg/960px-%C4%8CT2_logo_2012.svg.png" group-title="Documentary",ČT 2
+#EXTINF:-1 tvg-id="ČT2.HD.sk" tvg-name="ČT 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/%C4%8CT2_logo_2012.svg/960px-%C4%8CT2_logo_2012.svg.png" group-title="Documentary",ČT 2
 http://88.212.15.19/live/test_ct2_25p/playlist.m3u8
-#EXTINF:-1 tvg-id="T24.sk" tvg-name="ČT24" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/%C4%8CT24_logo.png/960px-%C4%8CT24_logo.png" group-title="News",ČT24
+#EXTINF:-1 tvg-id="ČT24.HD.sk" tvg-name="ČT24" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/%C4%8CT24_logo.png/960px-%C4%8CT24_logo.png" group-title="News",ČT24
 http://88.212.15.19/live/test_ct24_hevc/playlist.m3u8
 #EXTINF:-1 tvg-name="ČT Sport" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/%C4%8CT_sport_logo.png/960px-%C4%8CT_sport_logo.png" group-title="Sports",ČT Sport
 http://88.212.15.19/live/test_ctsport_25p/playlist.m3u8
