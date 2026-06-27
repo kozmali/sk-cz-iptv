@@ -83,6 +83,7 @@ CHANNEL_MAPPING = {
     "Miestna TV Trebišov.sk": "Miestna TV Trebišov.sk",
     "TV9 KTV": "TV9.KTV.cz",
     "TV Nitrička.sk": "TV Nitrička.sk",
+    "RTM": "RTM.cz",
 }
 
 # Zdrojové URL adresy z iptv-org
