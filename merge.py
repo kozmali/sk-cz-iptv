@@ -21,11 +21,11 @@ CHANNEL_MAPPING = {
     "ČT24": "ČT24.HD.sk",
     "ČT 24": "ČT24.HD.sk",
 
-    "Mňau TV": "Mňau.TV.cz",
     "Ocko Black": "ÓČKOBlack.cz",
     "Óčko Expres": "ÓČKOEXPRES.cz",
     "Ocko Star": "ÓČKOSTAR.cz",
-    "SLager Original": "Šláger.Originál.HD.sk",
+    "Óčko Gold": "ÓČKOSTAR.cz",
+    "Slager Original": "Šláger.Originál.HD.sk",
     "Slager Muzika": "Šláger.Muzika.HD.sk",
     
     "TV Lux": "Lux.TV.HD.sk",
@@ -74,8 +74,8 @@ CHANNEL_MAPPING = {
     
     "Zapadoslovenska TV": "Západoslovenská.televízia.cz",
     "POLAR": "POLAR.cz",
-    "Polar TV": "Polar TV.sk",
-    "ČRo Plzeň.cz": "POLAR.cz",
+    "Polar TV": "POLAR.cz",
+    "Plzeň TV": "ČRoPlzeň.cz",
     "TV Brno 1": "TV.Brno.1.cz",
     
     "Liptov": "Liptov.cz",
