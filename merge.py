@@ -89,10 +89,14 @@ CHANNEL_MAPPING = {
     "TVT": "TVT.cz",
     "Miestna TV Trebišov.sk": "Miestna.TV.Trebišov.sk",
     "TV9 KTV": "TV9.KTV.cz",
-    "TV Nitricka": "TV.Nitrička.sk",
+    "TV Nitricka": "TV.Nitricka.sk",
     "RTM": "RTM.cz",
     "RTM Plus": "RTM.plus.Liberecko.cz",
     "Régió TV": "Régió.TV.cz",
+    "TV Romana": "TV.Romana.sk",
+    "TV Romana": "Romana.cz",
+    "TV NRSR": "tv.NRSR.sk",
+    "TV LocAll": "TV.LocAll.sk,
 }
 
 # Zdrojové URL adresy z iptv-org
