@@ -8,6 +8,8 @@ import re
 # ==========================================
 CHANNEL_MAPPING = {
     "Jednotka": "Jednotka.sk",
+    "Jednotka": "Jednotka.HD.sk",
+    "Dvojka": "Dvojka.HD.sk",
     "Dvojka": "Dvojka.sk",
     "Markíza": "Markiza.sk",
     "JOJ": "TV.JOJ.sk",
@@ -20,31 +22,54 @@ CHANNEL_MAPPING = {
     "ČT 2": "ČT2.HD.sk",
     "ČT24": "ČT24.HD.sk",
     "ČT 24": "ČT24.HD.sk",
-    "ČT Sport": "CT.Sport.cz",
-
+    
+    "Mňau": "Mňau.TV.cz",
+    "Ocko Black": "ÓČKOBlack.cz",
+    "Óčko Expres": "ÓČKOEXPRES.cz",
+    "Óčko Star": "ÓČKOSTAR.cz",
+    "Šlágr Originál": "ŠLÁGRORIGINÁL.cz",
+    "Šlágr Premium": "ŠLÁGRPREMIUM.cz",
+    "TV Lux": "Lux.TV.HD.sk",
+    "Retro Music Television": "RETRO.Music.TV.sk",
+    "Televize Seznam": "Televize.Seznam.HD.sk",
+    "TV Noe": "Noe.cz",
+    "TV Noe+": "Noe+.cz",
+    "Východočeská TV": " V1.cz",
+    
     "Nova": "Nova.cz",
     "Nova Cinema": "Nova.Cinema.cz",
     "Nova Action": "Nova.Action.cz",
     "Prima": "Prima.cz",
     "Prima COOL": "Prima.Cool.cz",
+    "AMC": "AMC.HD.sk",
 
     "History": "History.HD.sk",
+    "History": "THEHISTORYCHANNEL.cz",
+    "History": "History.Channel.cz",
     "AMC": "AMC.HD.sk",
     "AMC Europe Czech Republic": "AMC.HD.sk",
 
     "AXN": "AXN.HD.sk",
+    "AXN": "AXN.HD.cz",
     "AXN CEE Czech Republic": "AXN.HD.sk",
+    "AXN CEE Czech Republic": "AXN.HD.cz",
     "AXN White": "AXN.White.cz",
     "AXN White CzechRepublic": "AXN.White.cz",
     "AXN White Czech Republic": "AXN.White.cz",
+    "AXN Black Czech Republic": "AXN.Black.cz",
+    "AXN CEE CEE Czech Republic": "AXN.cz",
 
     "FilmBox+ One Czech Republic": "Filmbox.HD.sk",
     "FilmBox+ Hits Czech Republic": "Filmbox.Premium.HD.sk",
     "FilmBox+ Emotion Czech Republic": "Filmbox.Extra.HD.sk",
     "FilmBox+ Love & Crime Czech Republic": "Filmbox.Family.sk",
 
-    "Barrandov Krimi": "Barrandov.Krimi.cz",
-    ":Šport": "RTVS.Sport.sk",
+    "Barrandov Krimi": "Barrandov.Krimi.HD.sk",
+    "Kino Barrandov": "Kino.Barrandov.HD.sk",
+    "Televízia OSEM": "TV.OSEM.cz",
+    "ČT:D/ČT art": "ČT:D/ČTart.cz",
+    ":Šport": ":ŠPORT.HD.sk",
+    ":24": ":24.HD.sk",
 }
 
 # Zdrojové URL adresy z iptv-org
