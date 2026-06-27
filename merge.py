@@ -96,7 +96,7 @@ CHANNEL_MAPPING = {
     "TV Romana": "TV.Romana.sk",
     "TV Romana": "Romana.cz",
     "TV NRSR": "tv.NRSR.sk",
-    "TV LocAll": "TV.LocAll.sk,
+    "TV LocAll": "TV.LocAll.sk",
 }
 
 # Zdrojové URL adresy z iptv-org
