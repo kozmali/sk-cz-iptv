@@ -68,21 +68,21 @@ CHANNEL_MAPPING = {
     ":24": ":24.HD.sk",
 
     "TV Doktor": "TV.Doktor.cz",
-    "LifeTV": "LifeTV.cz",
+    "LifeTv": "LifeTV.cz",
     "JOJ Šport 2": "JOJ.Šport.2.cz",
-    "Markíza Klasik": "Markíza.Klasik.HD.sk",
-    "Západoslovenská televízia": "Západoslovenská.televízia.cz",
+    "Klasik": "Markíza.Klasik.HD.sk",
+    "Zapadoslovenska TV": "Západoslovenská.televízia.cz",
     "POLAR": "POLAR.cz",
     "Polar TV.sk": "Polar TV.sk",
     "ČRo Plzeň.cz": "POLAR.cz",
     "ČRo Plzeň.cz": "ČRo Plzeň.cz",
     
     "Liptov": "Liptov.cz",
-    "Mestská televízia Ružomberok": "Mestská.televízia.Ružomberok.cz",
+    "MTR": "Mestská.televízia.Ružomberok.cz",
     "TVT": "TVT.cz",
     "Miestna TV Trebišov.sk": "Miestna TV Trebišov.sk",
     "TV9 KTV": "TV9.KTV.cz",
-    "TV Nitrička.sk": "TV Nitrička.sk",
+    "TV Nitricka": "TV Nitrička.sk",
     "RTM": "RTM.cz",
 }
 
