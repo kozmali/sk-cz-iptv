@@ -7,22 +7,20 @@ import re
 # Hodnota = channel id, ktoré existuje v tvojich EPG XML zdrojoch
 # ==========================================
 CHANNEL_MAPPING = {
-    "Jednotka": "Jednotka.sk",
     "Jednotka": "Jednotka.HD.sk",
     "Dvojka": "Dvojka.HD.sk",
-    "Dvojka": "Dvojka.sk",
     "Markíza": "Markiza.sk",
     "JOJ": "TV.JOJ.sk",
     "JOJ Plus": "JOJ.Plus.sk",
     "Dajto": "Dajto.sk",
 
-    "ČT1": "ČT1.HD.sk",
-    "ČT 1": "ČT1.HD.sk",
-    "ČT2": "ČT2.HD.sk",
-    "ČT 2": "ČT2.HD.sk",
-    "ČT24": "ČT24.HD.sk",
-    "ČT 24": "ČT24.HD.sk",
-    
+    "ČT1": "T1.sk",
+    "ČT 1": "T1.sk",
+    "ČT2": "T2.sk",
+    "ČT 2": "T2.sk",
+    "ČT24": "T24.sk",
+    "ČT 24": "T24.sk",
+
     "Mňau": "Mňau.TV.cz",
     "Ocko Black": "ÓČKOBlack.cz",
     "Óčko Expres": "ÓČKOEXPRES.cz",
@@ -34,42 +32,39 @@ CHANNEL_MAPPING = {
     "Televize Seznam": "Televize.Seznam.HD.sk",
     "TV Noe": "Noe.cz",
     "TV Noe+": "Noe+.cz",
-    "Východočeská TV": " V1.cz",
-    
+    "Východočeská TV": "V1.cz",
+
     "Nova": "Nova.cz",
     "Nova Cinema": "Nova.Cinema.cz",
     "Nova Action": "Nova.Action.cz",
     "Prima": "Prima.cz",
     "Prima COOL": "Prima.Cool.cz",
-    "AMC": "AMC.HD.sk",
 
-    "History": "History.HD.sk",
+    "AMC": "AMC.cz",
+    "AMC Europe Czech Republic": "AMC.cz",
+
     "History": "THEHISTORYCHANNEL.cz",
-    "History": "History.Channel.cz",
-    "AMC": "AMC.HD.sk",
-    "AMC Europe Czech Republic": "AMC.HD.sk",
 
-    "AXN": "AXN.HD.sk",
-    "AXN": "AXN.HD.cz",
-    "AXN CEE Czech Republic": "AXN.HD.sk",
-    "AXN CEE Czech Republic": "AXN.HD.cz",
+    "AXN": "AXN.cz",
+    "AXN CEE Czech Republic": "AXN.cz",
     "AXN White": "AXN.White.cz",
     "AXN White CzechRepublic": "AXN.White.cz",
     "AXN White Czech Republic": "AXN.White.cz",
     "AXN Black Czech Republic": "AXN.Black.cz",
     "AXN CEE CEE Czech Republic": "AXN.cz",
 
-    "FilmBox+ One Czech Republic": "Filmbox.HD.sk",
-    "FilmBox+ Hits Czech Republic": "Filmbox.Premium.HD.sk",
-    "FilmBox+ Emotion Czech Republic": "Filmbox.Extra.HD.sk",
-    "FilmBox+ Love & Crime Czech Republic": "Filmbox.Family.sk",
+    "FilmBox+ One Czech Republic": "FILMBOX.cz",
+    "FilmBox+ Hits Czech Republic": "FILMBOXPREMIUM.cz",
+    "FilmBox+ Emotion Czech Republic": "FILMBOXEXTRA.cz",
+    "FilmBox+ Love & Crime Czech Republic": "FILMBOXFAMILY.cz",
 
-    "Barrandov Krimi": "Barrandov.Krimi.HD.sk",
+    "Barrandov Krimi": "BARRANDOVKRIMI.cz",
     "Kino Barrandov": "Kino.Barrandov.HD.sk",
     "Televízia OSEM": "TV.OSEM.cz",
     "ČT:D/ČT art": "ČT:D/ČTart.cz",
-    ":Šport": ":ŠPORT.HD.sk",
-    ":24": ":24.HD.sk",
+
+    ":Šport": "RTVS.SPORT.cz",
+    ":24": "24.sk",
 }
 
 # Zdrojové URL adresy z iptv-org
