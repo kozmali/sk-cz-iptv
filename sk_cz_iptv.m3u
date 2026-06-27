@@ -39,7 +39,7 @@ http://88.212.15.19/live/test_filmbox/playlist.m3u8
 https://n4.stv.livebox.sk/stv-tv/fe09ae603df84846978c9d960f699900/stv1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Kino.Barrandov.HD.sk" tvg-name="Kino Barrandov" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Kino_Barrandov_logo.png/960px-Kino_Barrandov_logo.png" group-title="Movies",Kino Barrandov
 http://83.167.253.107/hdmi1_ext
-#EXTINF:-1 tvg-id="LifeTV.cz" tvg-name="LifeTv" tvg-logo="https://i.imgur.com/jO8kAY2.png" group-title="Religious",LifeTv
+#EXTINF:-1 tvg-name="LifeTv" tvg-logo="https://i.imgur.com/jO8kAY2.png" group-title="Religious",LifeTv
 https://lifetv.mpks.sk/s.m3u8
 #EXTINF:-1 tvg-name="Minimax" tvg-logo="https://i.imgur.com/WWOlm1x.png" group-title="Kids",Minimax
 http://88.212.15.19/live/test_minimax/playlist.m3u8
@@ -176,7 +176,7 @@ https://vysilani.zaktv.cz/broadcast/hls/jtv/index.m3u8
 http://83.167.253.107/hdmi1_ext
 #EXTINF:-1 tvg-name="Minimax" tvg-logo="https://i.imgur.com/WWOlm1x.png" group-title="Kids",Minimax
 http://88.212.15.19/live/test_minimax/playlist.m3u8
-#EXTINF:-1 tvg-name="Mňau TV" tvg-logo="https://i.imgur.com/deVHJKS.png" group-title="Undefined",Mňau TV
+#EXTINF:-1 tvg-id="Mňau.TV.cz" tvg-name="Mňau TV" tvg-logo="https://i.imgur.com/deVHJKS.png" group-title="Undefined",Mňau TV
 https://5ca49f2417d90.streamlock.net/mnau/livestream/playlist.m3u8
 #EXTINF:-1 tvg-name="Music Box Classic" tvg-logo="https://musicboxclassic.com/music_box_classic_logo.png" group-title="Music",Music Box Classic
 http://88.212.15.19/live/mb_classic/index.m3u8
