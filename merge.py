@@ -68,15 +68,16 @@ CHANNEL_MAPPING = {
     ":24": ":24.HD.sk",
 
     "TV Doktor": "TV.Doktor.cz",
-    "LifeTv": "LifeTV.cz",
+    "LifeTV": "LifeTV.cz",
+    "Life TV": "LifeTV.sk",
     "JOJ Šport 2": "JOJ.Šport.2.cz",
     "Klasik": "Markíza.Klasik.HD.sk",
     
     "Zapadoslovenska TV": "Západoslovenská.televízia.cz",
-    "POLAR": "POLAR.cz",
     "Polar TV": "POLAR.cz",
     "Plzeň TV": "ČRoPlzeň.cz",
     "TV Brno 1": "TV.Brno.1.cz",
+    "Mňau TV": "Mňau.TV.cz",
     
     "Liptov": "Liptov.cz",
     "MTR": "Mestská.televízia.Ružomberok.cz",
