@@ -60,7 +60,7 @@ https://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8
 http://213.91.179.28:8000/play/a0bw
 #EXTINF:-1 tvg-name="Senzi" tvg-logo="https://i.imgur.com/1qJMmBu.png" group-title="Undefined",Senzi
 http://lb.streaming.sk/senzi/stream/playlist.m3u8
-#EXTINF:-1 tvg-name="Slager Muzika" tvg-logo="https://i.imgur.com/hKdXwrW.png" group-title="Music",Slager Muzika
+#EXTINF:-1 tvg-id="Šláger.Muzika.HD.sk" tvg-name="Slager Muzika" tvg-logo="https://i.imgur.com/hKdXwrW.png" group-title="Music",Slager Muzika
 https://stream-23.mazana.tv/slagrmuzika.m3u8s
 #EXTINF:-1 tvg-name="Slager Original" tvg-logo="https://i.imgur.com/0YjeWcq.png" group-title="Music",Slager Original
 https://stream-13.mazana.tv/slagroriginal.m3u8s
@@ -176,7 +176,7 @@ https://vysilani.zaktv.cz/broadcast/hls/jtv/index.m3u8
 http://83.167.253.107/hdmi1_ext
 #EXTINF:-1 tvg-name="Minimax" tvg-logo="https://i.imgur.com/WWOlm1x.png" group-title="Kids",Minimax
 http://88.212.15.19/live/test_minimax/playlist.m3u8
-#EXTINF:-1 tvg-name="Mňau TV" tvg-logo="https://i.imgur.com/deVHJKS.png" group-title="Undefined",Mňau TV
+#EXTINF:-1 tvg-id="Mňau.TV.cz" tvg-name="Mňau TV" tvg-logo="https://i.imgur.com/deVHJKS.png" group-title="Undefined",Mňau TV
 https://5ca49f2417d90.streamlock.net/mnau/livestream/playlist.m3u8
 #EXTINF:-1 tvg-name="Music Box Classic" tvg-logo="https://musicboxclassic.com/music_box_classic_logo.png" group-title="Music",Music Box Classic
 http://88.212.15.19/live/mb_classic/index.m3u8
@@ -194,7 +194,7 @@ https://dash2.antik.sk/live/test_ocko_black/playlist.m3u8
 https://ocko-live.ssl.cdn.cra.cz/channels/ocko_expres/playlist.m3u8
 #EXTINF:-1 tvg-name="Óčko Gold" tvg-logo="https://i.imgur.com/nrWNyLc.jpg" group-title="Music",Óčko Gold
 https://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist.m3u8
-#EXTINF:-1 tvg-name="Ocko Star" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/%C3%93%C4%8Dko_Star_logo.png/960px-%C3%93%C4%8Dko_Star_logo.png" group-title="Music",Ocko Star
+#EXTINF:-1 tvg-id="ÓČKOSTAR.cz" tvg-name="Ocko Star" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/%C3%93%C4%8Dko_Star_logo.png/960px-%C3%93%C4%8Dko_Star_logo.png" group-title="Music",Ocko Star
 https://dash4.antik.sk/live/test_ocko_star/playlist.m3u8
 #EXTINF:-1 tvg-name="OIK TV" tvg-logo="https://i.imgur.com/1mXxQ02.png" group-title="General",OIK TV
 https://streamer05.low-latency.cz/oiktv/index.m3u8
@@ -202,7 +202,7 @@ https://streamer05.low-latency.cz/oiktv/index.m3u8
 https://vysilani.zaktv.cz/broadcast/hls/ptv/index.m3u8
 #EXTINF:-1 tvg-name="Polar2 TV" tvg-logo="https://i.imgur.com/hCPiMYZ.png" group-title="General",Polar2 TV
 https://stream.polar.cz/polar2/polarlive2-1/playlist.m3u8
-#EXTINF:-1 tvg-name="Polar TV" tvg-logo="https://i.imgur.com/pTJHIX1.png" group-title="General",Polar TV
+#EXTINF:-1 tvg-id="Polar TV.sk" tvg-name="Polar TV" tvg-logo="https://i.imgur.com/pTJHIX1.png" group-title="General",Polar TV
 https://stream.polar.cz/polar/polarlive-1/playlist.m3u8
 #EXTINF:-1 tvg-id="Prima.cz" tvg-name="Prima" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Prima_2013.png/960px-Prima_2013.png" group-title="Undefined",Prima
 http://88.212.15.19/live/prima_avc_25p/playlist.m3u8
@@ -216,9 +216,9 @@ http://88.212.15.19/live/test_prima_star_hevc_25p/playlist.m3u8
 http://88.212.15.19/live/prima_zoom_avc_25p/playlist.m3u8
 #EXTINF:-1 tvg-id="RETRO.Music.TV.sk" tvg-name="Retro Music Television" tvg-logo="https://i.imgur.com/pyOjdZs.png" group-title="Music",Retro Music Television
 https://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8
-#EXTINF:-1 tvg-name="RTM Plus" tvg-logo="https://i.imgur.com/RNdcP2J.png" group-title="Undefined",RTM Plus
+#EXTINF:-1 tvg-id="RTM.plus.Liberecko.cz" tvg-name="RTM Plus" tvg-logo="https://i.imgur.com/RNdcP2J.png" group-title="Undefined",RTM Plus
 https://www.rtmplus.cz/live/1-playlist.m3u8
-#EXTINF:-1 tvg-name="Slager Muzika" tvg-logo="https://i.imgur.com/hKdXwrW.png" group-title="Music",Slager Muzika
+#EXTINF:-1 tvg-id="Šláger.Muzika.HD.sk" tvg-name="Slager Muzika" tvg-logo="https://i.imgur.com/hKdXwrW.png" group-title="Music",Slager Muzika
 https://stream-23.mazana.tv/slagrmuzika.m3u8s
 #EXTINF:-1 tvg-name="Slager Original" tvg-logo="https://i.imgur.com/0YjeWcq.png" group-title="Music",Slager Original
 https://stream-13.mazana.tv/slagroriginal.m3u8s
@@ -226,7 +226,7 @@ https://stream-13.mazana.tv/slagroriginal.m3u8s
 https://dash2.antik.sk/live/sporty_tv/index.m3u8
 #EXTINF:-1 tvg-id="Televize.Seznam.HD.sk" tvg-name="Televize Seznam" tvg-logo="https://i.imgur.com/TpQ8PRb.png" group-title="Undefined",Televize Seznam
 http://88.212.15.19/live/test_seznam_hevc_25p/playlist.m3u8
-#EXTINF:-1 tvg-name="TV Brno 1" tvg-logo="https://i.imgur.com/8Xm3WSn.png" group-title="General",TV Brno 1
+#EXTINF:-1 tvg-id="TV.Brno.1.cz" tvg-name="TV Brno 1" tvg-logo="https://i.imgur.com/8Xm3WSn.png" group-title="General",TV Brno 1
 https://stream.polar.cz/tvbrno1/tvbrno1live-1/playlist.m3u8
 #EXTINF:-1 tvg-id="Noe.cz" tvg-name="TV Noe" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Noe-logo-2016.png/500px-Noe-logo-2016.png" group-title="Undefined",TV Noe
 https://n105.quickmedia.tv/noetv/live/noetv/Ifd4_1_4/chunks_dvr_timeshift-0-7200.m3u8
