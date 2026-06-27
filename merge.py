@@ -24,15 +24,15 @@ CHANNEL_MAPPING = {
     "Ocko Black": "ÓČKOBlack.cz",
     "Óčko Expres": "ÓČKOEXPRES.cz",
     "Ocko Star": "Óčko.Star.cz",
-    "Óčko Gold": "Óčko.Star.HD.sk",
+    "Óčko Gold": "Óčko.Star.cz",
     "Slager Original": "Šláger.Originál.HD.sk",
     "Slager Muzika": "Šláger.Muzika.HD.sk",
     
     "TV Lux": "Lux.TV.HD.sk",
     "Retro Music Television": "RETRO.Music.TV.sk",
     "Televize Seznam": "Televize.Seznam.HD.sk",
-    "TV Noe": "Noe.cz",
-    "TV Noe+": "Noe+.cz",
+    "TV Noe": "TVNOE.cz",
+    "Noe+": "Noe+.cz",
     "Východočeská TV": "V1.cz",
 
     "Nova": "Nova.cz",
