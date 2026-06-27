@@ -21,12 +21,12 @@ CHANNEL_MAPPING = {
     "ČT24": "ČT24.HD.sk",
     "ČT 24": "ČT24.HD.sk",
 
-    "Mňau": "Mňau.TV.cz",
+    "Mňau TV": "Mňau.TV.cz",
     "Ocko Black": "ÓČKOBlack.cz",
     "Óčko Expres": "ÓČKOEXPRES.cz",
-    "Óčko Star": "ÓČKOSTAR.cz",
-    "Šláger Originál": "Šláger.Originál.HD.sk",
-    "Šláger Muzika": "Šláger.Muzika.HD.sk",
+    "Ocko Star": "ÓČKOSTAR.cz",
+    "SLager Original": "Šláger.Originál.HD.sk",
+    "Slager Muzika": "Šláger.Muzika.HD.sk",
     
     "TV Lux": "Lux.TV.HD.sk",
     "Retro Music Television": "RETRO.Music.TV.sk",
@@ -71,11 +71,12 @@ CHANNEL_MAPPING = {
     "LifeTv": "LifeTV.cz",
     "JOJ Šport 2": "JOJ.Šport.2.cz",
     "Klasik": "Markíza.Klasik.HD.sk",
+    
     "Zapadoslovenska TV": "Západoslovenská.televízia.cz",
     "POLAR": "POLAR.cz",
-    "Polar TV.sk": "Polar TV.sk",
+    "Polar TV": "Polar TV.sk",
     "ČRo Plzeň.cz": "POLAR.cz",
-    "ČRo Plzeň.cz": "ČRo Plzeň.cz",
+    "TV Brno 1": "TV.Brno.1.cz",
     
     "Liptov": "Liptov.cz",
     "MTR": "Mestská.televízia.Ružomberok.cz",
@@ -84,6 +85,7 @@ CHANNEL_MAPPING = {
     "TV9 KTV": "TV9.KTV.cz",
     "TV Nitricka": "TV Nitrička.sk",
     "RTM": "RTM.cz",
+    "RTM Plus": "RTM.plus.Liberecko.cz",
     "Régió TV": "Régió.TV.cz",
 }
 
