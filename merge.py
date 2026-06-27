@@ -84,6 +84,7 @@ CHANNEL_MAPPING = {
     "TV9 KTV": "TV9.KTV.cz",
     "TV Nitricka": "TV Nitrička.sk",
     "RTM": "RTM.cz",
+    "Régió TV": "Régió.TV.cz",
 }
 
 # Zdrojové URL adresy z iptv-org
