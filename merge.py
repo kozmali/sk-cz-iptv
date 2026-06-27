@@ -36,8 +36,13 @@ urls = [
 # Nové EPG z epgshare01
 epg_sk = "https://epgshare01.online/epgshare01/epg_ripper_SK1.xml.gz"
 epg_cz = "https://epgshare01.online/epgshare01/epg_ripper_CZ1.xml.gz"
+epg_cz0 = "https://iptv-epg.org/files/epg-cz.xml"
+epg_sk1 = "https://raw.githubusercontent.com/globetvapp/epg/main/Slovakia/slovakia1.xml"
+epg_sk2 = "https://raw.githubusercontent.com/globetvapp/epg/main/Slovakia/slovakia2.xml"
+epg_cz1 = "https://raw.githubusercontent.com/globetvapp/epg/main/Czech/czech1.xml"
+epg_cz2 = "https://raw.githubusercontent.com/globetvapp/epg/main/Czech/czech2.xml"
 
-merged_content = [f'#EXTM3U url-tvg="{epg_sk},{epg_cz}"']
+merged_content = [f'#EXTM3U url-tvg="{epg_sk},{epg_cz},{epg_cz0},{epg_sk1},{epg_sk2},{epg_cz1},{epg_cz2}"']
 
 for url in urls:
     try:
