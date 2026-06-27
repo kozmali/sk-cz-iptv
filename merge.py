@@ -2,9 +2,9 @@ import requests
 import re
 
 # ==========================================
-# TVOJ MAPOVACÍ SLOVNÍK (Ako v PHP)
-# Vľavo: Očistený názov z iptv-org
-# Vpravo: Presné ID z epgshare01 (zoznam_stanic.txt)
+# Mapovanie názvov kanálov -> správne tvg-id z EPG zdrojov
+# Kľúč = očistený názov z iptv playlistu
+# Hodnota = channel id, ktoré existuje v tvojich EPG XML zdrojoch
 # ==========================================
 CHANNEL_MAPPING = {
     "Jednotka": "Jednotka.sk",
@@ -13,18 +13,38 @@ CHANNEL_MAPPING = {
     "JOJ": "TV.JOJ.sk",
     "JOJ Plus": "JOJ.Plus.sk",
     "Dajto": "Dajto.sk",
-    "ČT1": "CT1.cz",
-    "ČT2": "CT2.cz",
+
+    "ČT1": "ČT1.HD.sk",
+    "ČT 1": "ČT1.HD.sk",
+    "ČT2": "ČT2.HD.sk",
+    "ČT 2": "ČT2.HD.sk",
+    "ČT24": "ČT24.HD.sk",
+    "ČT 24": "ČT24.HD.sk",
     "ČT Sport": "CT.Sport.cz",
-    "ČT24": "CT24.cz",
+
     "Nova": "Nova.cz",
     "Nova Cinema": "Nova.Cinema.cz",
     "Nova Action": "Nova.Action.cz",
     "Prima": "Prima.cz",
     "Prima COOL": "Prima.Cool.cz",
-    "History": "History.cz",
-    "AXN": "AXN.cz"
-    # Ak ti bude chýbať EPG na inej stanici, jednoducho ju sem dopíšeš.
+
+    "History": "History.HD.sk",
+    "AMC": "AMC.HD.sk",
+    "AMC Europe Czech Republic": "AMC.HD.sk",
+
+    "AXN": "AXN.HD.sk",
+    "AXN CEE Czech Republic": "AXN.HD.sk",
+    "AXN White": "AXN.White.cz",
+    "AXN White CzechRepublic": "AXN.White.cz",
+    "AXN White Czech Republic": "AXN.White.cz",
+
+    "FilmBox+ One Czech Republic": "Filmbox.HD.sk",
+    "FilmBox+ Hits Czech Republic": "Filmbox.Premium.HD.sk",
+    "FilmBox+ Emotion Czech Republic": "Filmbox.Extra.HD.sk",
+    "FilmBox+ Love & Crime Czech Republic": "Filmbox.Family.sk",
+
+    "Barrandov Krimi": "Barrandov.Krimi.cz",
+    ":Šport": "RTVS.Sport.sk",
 }
 
 # Zdrojové URL adresy z iptv-org
@@ -33,53 +53,55 @@ urls = [
     "https://iptv-org.github.io/iptv/countries/cz.m3u"
 ]
 
-# Nové EPG z epgshare01
-epg_sk = "https://epgshare01.online/epgshare01/epg_ripper_SK1.xml.gz"
-epg_cz = "https://epgshare01.online/epgshare01/epg_ripper_CZ1.xml.gz"
-epg_cz0 = "https://iptv-epg.org/files/epg-cz.xml"
-epg_sk1 = "https://raw.githubusercontent.com/globetvapp/epg/main/Slovakia/slovakia1.xml"
-epg_sk2 = "https://raw.githubusercontent.com/globetvapp/epg/main/Slovakia/slovakia2.xml"
-epg_cz1 = "https://raw.githubusercontent.com/globetvapp/epg/main/Czech/czech1.xml"
-epg_cz2 = "https://raw.githubusercontent.com/globetvapp/epg/main/Czech/czech2.xml"
+# Zjednotený EPG zdroj z tvojho druhého repozitára
+merged_epg_url = "https://raw.githubusercontent.com/kozmali/sk-cz-epg/refs/heads/main/epg.xml.gz"
 
-merged_content = [f'#EXTM3U url-tvg="{epg_sk},{epg_cz},{epg_cz0},{epg_sk1},{epg_sk2},{epg_cz1},{epg_cz2}"']
+merged_content = [f'#EXTM3U url-tvg="{merged_epg_url}"']
+
+
+def clean_channel_name(name: str) -> str:
+    name = re.sub(r'\s*\(\d+p\)', '', name)
+    name = re.sub(r'\s*\[.*?\]', '', name)
+    name = name.replace("STV1", "Jednotka")
+    name = name.replace("STV2", "Dvojka")
+    name = name.replace("CzechRepublic", "Czech Republic")
+    name = " ".join(name.split())
+    return name.strip()
+
 
 for url in urls:
     try:
-        response = requests.get(url, timeout=15)
-        if response.status_code == 200:
-            lines = response.text.splitlines()
-            start_idx = 1 if lines and lines[0].strip().startswith("#EXTM3U") else 0
-            
-            for line in lines[start_idx:]:
-                if line.strip():
-                    if line.startswith("#EXTINF"):
-                        parts = line.rsplit(",", 1)
-                        if len(parts) == 2:
-                            inf_part, name_part = parts[0], parts[1]
-                            
-                            # 1. Vyčistíme balast z názvu stanice
-                            cleaned_name = re.sub(r'\s*\(\d+p\)', '', name_part)
-                            cleaned_name = re.sub(r'\s*\[.*?\]', '', cleaned_name)
-                            cleaned_name = cleaned_name.replace("STV1", "").replace("STV2", "")
-                            cleaned_name = " ".join(cleaned_name.split())
-                            
-                            # 2. Úplne vymažeme staré iptv-org IDčka a názvy
-                            inf_part = re.sub(r'tvg-id="[^"]*"', '', inf_part)
-                            inf_part = re.sub(r'tvg-name="[^"]*"', '', inf_part)
-                            
-                            # 3. Zistíme, či máme pre tento názov správne ID v našom slovníku
-                            spravne_id = CHANNEL_MAPPING.get(cleaned_name)
-                            
-                            # 4. Ak sme ho našli, vložíme ho do playlistu
-                            if spravne_id:
-                                inf_part = inf_part.replace('#EXTINF:-1', f'#EXTINF:-1 tvg-id="{spravne_id}"')
-                            
-                            line = f"{inf_part},{cleaned_name}"
-                    
-                    merged_content.append(line)
-        else:
-            print(f"Chyba pri sťahovaní {url}: Status {response.status_code}")
+        response = requests.get(url, timeout=20)
+        response.raise_for_status()
+        lines = response.text.splitlines()
+        start_idx = 1 if lines and lines[0].strip().startswith("#EXTM3U") else 0
+
+        for line in lines[start_idx:]:
+            if not line.strip():
+                continue
+
+            if line.startswith("#EXTINF"):
+                parts = line.rsplit(",", 1)
+                if len(parts) == 2:
+                    inf_part, name_part = parts[0], parts[1]
+                    cleaned_name = clean_channel_name(name_part)
+
+                    # odstránenie pôvodných iptv-org identifikátorov
+                    inf_part = re.sub(r'\s*tvg-id="[^"]*"', '', inf_part)
+                    inf_part = re.sub(r'\s*tvg-name="[^"]*"', '', inf_part)
+
+                    # nájdi správne tvg-id
+                    spravne_id = CHANNEL_MAPPING.get(cleaned_name)
+
+                    if spravne_id:
+                        inf_part = inf_part.replace('#EXTINF:-1', f'#EXTINF:-1 tvg-id="{spravne_id}" tvg-name="{cleaned_name}"')
+                    else:
+                        inf_part = inf_part.replace('#EXTINF:-1', f'#EXTINF:-1 tvg-name="{cleaned_name}"')
+
+                    line = f"{inf_part},{cleaned_name}"
+
+            merged_content.append(line)
+
     except Exception as e:
         print(f"Zlyhalo spojenie s {url}: {e}")
 
