@@ -78,7 +78,7 @@ https://arenasportslovakia.ddns.net/hls/cetv2.m3u8
 http://80.94.54.11:1935/live/dolnykubin1/playlist.m3u8
 #EXTINF:-1 tvg-name="TV Liptov" tvg-logo="https://i.imgur.com/CkvB3af.png" group-title="General",TV Liptov
 http://95.105.255.137:1935/tvturiec/tvliptov.stream/playlist.m3u8
-#EXTINF:-1 tvg-name="TV LocAll" tvg-logo="https://i.imgur.com/xN1CJol.png" group-title="Undefined",TV LocAll
+#EXTINF:-1 tvg-id="TV.LocAll.sk" tvg-name="TV LocAll" tvg-logo="https://i.imgur.com/xN1CJol.png" group-title="Undefined",TV LocAll
 http://tv.geniusnet.sk:8081/localltv/pl.m3u8
 #EXTINF:-1 tvg-id="Lux.TV.HD.sk" tvg-name="TV Lux" tvg-logo="https://i.imgur.com/mAMyTkq.png" group-title="Undefined",TV Lux
 https://stream.tvlux.sk/lux/ngrp:lux.stream_all/playlist.m3u8
@@ -86,17 +86,17 @@ https://stream.tvlux.sk/lux/ngrp:lux.stream_all/playlist.m3u8
 https://dash3.antik.sk/live/test_mistral_atktv/playlist.m3u8
 #EXTINF:-1 tvg-name="TV Myjava" tvg-logo="https://i.imgur.com/9f9VmvF.png" group-title="General",TV Myjava
 http://95.105.193.219:88/hls/tvm.m3u8
-#EXTINF:-1 tvg-id="TV.Nitrička.sk" tvg-name="TV Nitricka" tvg-logo="https://i.imgur.com/iwWyG1A.png" group-title="General",TV Nitricka
+#EXTINF:-1 tvg-id="TV.Nitricka.sk" tvg-name="TV Nitricka" tvg-logo="https://i.imgur.com/iwWyG1A.png" group-title="General",TV Nitricka
 https://dash4.antik.sk/live/test_nitricka/playlist.m3u8
 #EXTINF:-1 tvg-name="TV Nové Zámky" tvg-logo="https://i.imgur.com/jGZlnzT.png" group-title="General",TV Nové Zámky
 http://s1.media-planet.sk/live/novezamky/BratuMarian.m3u8
-#EXTINF:-1 tvg-name="TV NRSR" tvg-logo="https://i.imgur.com/hsJsu3I.png" group-title="Legislative",TV NRSR
+#EXTINF:-1 tvg-id="tv.NRSR.sk" tvg-name="TV NRSR" tvg-logo="https://i.imgur.com/hsJsu3I.png" group-title="Legislative",TV NRSR
 https://n11.stv.livebox.sk/stv-tv/stv4.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="TV Poprad" tvg-logo="https://i.imgur.com/x6ZvOp6.png" group-title="General",TV Poprad
 http://213.81.153.221:8080/poprad
 #EXTINF:-1 tvg-name="TV Povazie" tvg-logo="https://i.imgur.com/JRD9YIY.png" group-title="Undefined",TV Povazie
 https://dash3.antik.sk/live/test_povazie/playlist.m3u8
-#EXTINF:-1 tvg-name="TV Romana" tvg-logo="https://i.imgur.com/r7avFBX.png" group-title="Undefined",TV Romana
+#EXTINF:-1 tvg-id="Romana.cz" tvg-name="TV Romana" tvg-logo="https://i.imgur.com/r7avFBX.png" group-title="Undefined",TV Romana
 http://88.212.7.11/live/test_tv_romana_web_player/playlist.m3u8
 #EXTINF:-1 tvg-name="TV Ružinov" tvg-logo="https://i.imgur.com/bUGuntH.png" group-title="Undefined",TV Ružinov
 http://lb.streaming.sk/tvruzinov/stream/playlist.m3u8
