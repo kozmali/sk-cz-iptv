@@ -14,9 +14,9 @@ CHANNEL_MAPPING = {
     "JOJ Plus": "JOJ.Plus.sk",
     "Dajto": "Dajto.sk",
 
-    "ČT1": "ČT1.HD.sk",
+    "ČT1": "ČT1.cz",
     "ČT 1": "ČT1.HD.sk",
-    "ČT2": "ČT2.HD.sk",
+    "ČT2": "ČT2.cz",
     "ČT 2": "ČT2.HD.sk",
     "ČT24": "ČT24.HD.sk",
     "ČT 24": "ČT24.HD.sk",
