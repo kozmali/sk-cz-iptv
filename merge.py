@@ -33,11 +33,8 @@ CHANNEL_MAPPING = {
     "Televize Seznam": "Televize.Seznam.HD.sk",
     "Noe": "Noe.cz",
     "Noe+": "Noe+.cz",
-    "Tv Noe": "Noe.cz",
-    "Tv Noe+": "Noe+.cz",
-    "NOE": "NOE.sk",
-    "Tv Noe": "NOE.sk",
-    "Tv Noe": "TVNOE.sk",
+    "TV Noe": "Noe.cz",
+    "TV Noe+": "Noe+.cz",
     "Východočeská TV": "V1.cz",
 
     "Nova": "Nova.cz",
@@ -73,8 +70,7 @@ CHANNEL_MAPPING = {
     ":24": ":24.HD.sk",
 
     "TV Doktor": "TV.Doktor.cz",
-    "LifeTv": "LifeTV.cz",
-    "Life Tv": "LifeTV.sk",
+    "LifeTv": "LifeTV.sk",
     "JOJ Šport 2": "JOJŠPORT2.cz",
     "Klasik": "MarkizaKlasik.cz",
     
