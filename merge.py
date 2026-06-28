@@ -31,8 +31,6 @@ CHANNEL_MAPPING = {
     "TV Lux": "Lux.TV.HD.sk",
     "Retro Music Television": "RETRO.Music.TV.sk",
     "Televize Seznam": "Televize.Seznam.HD.sk",
-    "Noe": "Noe.cz",
-    "Noe+": "Noe+.cz",
     "TV Noe": "Noe.cz",
     "TV Noe+": "Noe+.cz",
     "Východočeská TV": "V1.cz",
@@ -87,6 +85,7 @@ CHANNEL_MAPPING = {
     "TV9 KTV": "TV9.KTV.cz",
     "TV Nitricka": "TV.Nitricka.sk",
     "RTM": "RTM.cz",
+    
     "RTM Plus": "RTM.plus.Liberecko.cz",
     "Régió TV": "Régió.TV.cz",
     "TV Romana": "TV.Romana.sk",
