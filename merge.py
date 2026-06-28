@@ -46,7 +46,10 @@ CHANNEL_MAPPING = {
 
     "AXN": "AXN.cz",
     "AXN CEE Czech Republic": "AXN.cz",
-    "AXN White": "AXNWHITE.cz",
+    "AXN White": "AXNWhite.ro",
+    "AXN White": "AXNWhiteRO.ro",
+    "AXN White": "AXN.White.ro",
+    "AXN White": "AXNWHITE.ro",
     "AXN White CzechRepublic": "AXN.White.cz",
     "AXN White Czech Republic": "AXN.White.cz",
     "AXN Black Czech Republic": "AXN.Black.cz",
@@ -55,7 +58,7 @@ CHANNEL_MAPPING = {
     "FilmBox+ One Czech Republic": "FILMBOX.cz",
     "FilmBox+ Hits Czech Republic": "FILMBOXPREMIUM.cz",
     "FilmBox+ Emotion Czech Republic": "FILMBOXEXTRA.cz",
-    "FilmBox+ Love & Crime Czech Republic": "FILMBOXFAMILY.cz",
+    "FilmBox+ Love & Crime Czech Republic": "FILMBOXSTARS.cz",
 
     "Barrandov Krimi": "BARRANDOVKRIMI.cz",
     "Kino Barrandov": "Kino.Barrandov.HD.sk",
