@@ -46,10 +46,7 @@ CHANNEL_MAPPING = {
 
     "AXN": "AXN.cz",
     "AXN CEE Czech Republic": "AXN.cz",
-    "AXN White": "AXNWhite.ro",
-    "AXN White": "AXNWhiteRO.ro",
     "AXN White": "AXN.White.ro",
-    "AXN White": "AXNWHITE.ro",
     "AXN White CzechRepublic": "AXN.White.cz",
     "AXN White Czech Republic": "AXN.White.cz",
     "AXN Black Czech Republic": "AXN.Black.cz",
@@ -59,6 +56,7 @@ CHANNEL_MAPPING = {
     "FilmBox+ Hits Czech Republic": "FILMBOXPREMIUM.cz",
     "FilmBox+ Emotion Czech Republic": "FILMBOXEXTRA.cz",
     "FilmBox+ Love & Crime Czech Republic": "FILMBOXSTARS.cz",
+    "FilmBox+ Comedy Czech Republic": "FILMBOXFAMILY.cz",
 
     "Barrandov Krimi": "BARRANDOVKRIMI.cz",
     "Kino Barrandov": "Kino.Barrandov.HD.sk",
@@ -70,8 +68,6 @@ CHANNEL_MAPPING = {
     "TV Noe": "Noe.cz",
     "TV Noe+": "Noe+.cz",
     
-    "TV Doktor": "TVDOKTOR.sk",
-    "LifeTv": "LifeTV.sk",
     "JOJ Šport 2": "JOJŠPORT2.cz",
     "Klasik": "Markíza.Klasik.HD.sk",
     
@@ -80,14 +76,19 @@ CHANNEL_MAPPING = {
     "Plzeň TV": "ČRoPlzeň.cz",
     "TV Brno 1": "TV.Brno.1.cz",
     "Mňau TV": "MŇAU.cz",
-    
     "Liptov": "Liptov.sk",
-    "MTR": "Mestská.televízia.Ružomberok.cz",
+
     "TVT": "TVT.cz",
     "Miestna TV Trebišov.sk": "Miestna.TV.Trebišov.sk",
     "TV9 KTV": "TV9.KTV.cz",
     "TV Nitricka": "TV.Nitricka.sk",
     "RTM": "RTM.cz",
+
+    "MTR": "Mestská.televízia.Ružomberok.cz",
+    "TV Povazie": "TV.Považie.cz",
+    "RTG int.": "RTGINT.ru",
+    "TV Ružinov": "TV.Ružinov.cz",
+    "LifeTv": "LifeTV.sk",
     
     "RTM Plus": "RTM.plus.Liberecko.cz",
     "Régió TV": "Régió.TV.cz",
