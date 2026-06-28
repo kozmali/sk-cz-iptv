@@ -67,10 +67,10 @@ CHANNEL_MAPPING = {
     ":Šport": "RTVS.SPORT.cz",
     ":24": ":24.HD.sk",
 
-    "TV Doktor": "TV.Doktor.cz",
+    "TV Doktor": "Doktor TV.sk",
     "LifeTv": "LifeTV.sk",
     "JOJ Šport 2": "JOJŠPORT2.cz",
-    "Klasik": "MarkizaKlasik.cz",
+    "Klasik": "Markíza.Klasik.HD.sk",
     
     "Zapadoslovenska TV": "Západoslovenská.televízia.cz",
     "Polar TV": "POLAR.cz",
