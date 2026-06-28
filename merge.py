@@ -31,8 +31,6 @@ CHANNEL_MAPPING = {
     "TV Lux": "Lux.TV.HD.sk",
     "Retro Music Television": "RETRO.Music.TV.sk",
     "Televize Seznam": "Televize.Seznam.HD.sk",
-    "TV Noe": "Noe.cz",
-    "TV Noe+": "Noe+.cz",
     "Východočeská TV": "V1.cz",
 
     "Nova": "Nova.cz",
@@ -66,8 +64,10 @@ CHANNEL_MAPPING = {
 
     ":Šport": "RTVS.SPORT.cz",
     ":24": ":24.HD.sk",
-
-    "TV Doktor": "Doktor TV.sk",
+    "TV Noe": "Noe.cz",
+    "TV Noe+": "Noe+.cz",
+    
+    "TV Doktor": "TVDOKTOR.sk",
     "LifeTv": "LifeTV.sk",
     "JOJ Šport 2": "JOJŠPORT2.cz",
     "Klasik": "Markíza.Klasik.HD.sk",
@@ -88,8 +88,6 @@ CHANNEL_MAPPING = {
     
     "RTM Plus": "RTM.plus.Liberecko.cz",
     "Régió TV": "Régió.TV.cz",
-    "TV Romana": "TV.Romana.sk",
-    "TV Romana": "Romana.cz",
     "TV NRSR": "tv.NRSR.sk",
     "TV LocAll": "TV.LocAll.sk",
 }
