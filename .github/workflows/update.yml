@@ -20,10 +20,8 @@ jobs:
     - name: Instalacia kniznice requests
       run: pip install requests
 
-    - name: Run merge script
-      run: |
-        python reorder.py
-        python merge.py
+    - name: Spustenie skriptu
+      run: python merge.py
 
     - name: Nahranie aktualizovaneho suboru
       run: |
