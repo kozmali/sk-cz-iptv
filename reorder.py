@@ -20,7 +20,6 @@ automaticky čísla za posledným (napr. 89, 90, 91...).
 
 CHANNEL_ORDER = [
     # 1–13: Hlavné SK stanice (cache-sk)
-
     # 14–22: Film / Entertainment (sk-cz-iptv)
     "FilmBox+ One Czech Republic",
     "FilmBox+ Love & Crime Czech Republic",
