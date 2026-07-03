@@ -20,8 +20,7 @@ automaticky čísla za posledným (napr. 89, 90, 91...).
 
 CHANNEL_ORDER = [
     # 1–13: Hlavné SK stanice (cache-sk)
-    "JOJ Cinema",
-    "Nova Cinema",
+
     # 14–22: Film / Entertainment (sk-cz-iptv)
     "FilmBox+ One Czech Republic",
     "FilmBox+ Love & Crime Czech Republic",
@@ -33,37 +32,16 @@ CHANNEL_ORDER = [
     "AXN White Czech Republic",
     "AXN White",
     # 23–29: Česká verejnoprávna + CS stanice (cache-sk)
-    "ČT 1",
-    "ČT 2",
     "Barrandov Krimi",
-    "CS Film",
-    "CS History",
     "History",
-    "CS Mystery",
     # 30–39: Šport (mix)
-    ":Šport",
-    "JOJ Šport",
-    "JOJ Šport 2",
     "Sport1",
     "Sport2",
-    "ČT Sport",
     "Sporty TV",
     "Golf Channel",
     "Arena Sport 1",
     "Arena Sport 2",
     # 40–51: Spravodajstvo + špeciálne (mix)
-    ":24",
-    "JOJ 24",
-    "TA3",
-    "ČT24",
-    "CNN Prima News",
-    "Live NRSR",
-    "Jojko",
-    "ČT:D/ČT art",
-    "TV Doktor",
-    "SZTŠ",
-    "Live :O",
-    "Live RTVS",
     # 52–65: Záujmové / Hudba / Náboženské (sk-cz-iptv)
     "Elektrika TV",
     "Mňau TV",
@@ -72,10 +50,8 @@ CHANNEL_ORDER = [
     "LifeTv",
     "Televízia OSEM",
     "Óčko",
-    "Óčko Expres",
     "Ocko Black",
     "Ocko Star",
-    "Retro Music Television",
     "Senzi",
     "Slager Original",
     "Slager Muzika",
