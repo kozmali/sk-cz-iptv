@@ -20,17 +20,6 @@ automaticky čísla za posledným (napr. 89, 90, 91...).
 
 CHANNEL_ORDER = [
     # 1–13: Hlavné SK stanice (cache-sk)
-    "Jednotka",
-    "Dvojka",
-    "Markíza",
-    "JOJ",
-    "Dajto",
-    "Krimi",
-    "Doma",
-    "Klasik",
-    "JOJ Plus",
-    "JOJ Krimi",
-    "JOJ Family",
     "JOJ Cinema",
     "Nova Cinema",
     # 14–22: Film / Entertainment (sk-cz-iptv)
