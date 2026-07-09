@@ -40,8 +40,6 @@ http://88.212.15.19/live/test_filmbox_plus_atk_1200/playlist.m3u8
 http://88.212.15.19/live/test_filmbox/playlist.m3u8
 #EXTINF:-1 tvg-id="Jednotka.HD.sk" tvg-name="Jednotka" tvg-logo="https://i.imgur.com/aqVki9i.png" group-title="General",Jednotka
 http://88.212.15.19/live/test_jednotka_25p/playlist.m3u8
-#EXTINF:-1 tvg-id="Kino.Barrandov.HD.sk" tvg-name="Kino Barrandov" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Kino_Barrandov_logo.png/960px-Kino_Barrandov_logo.png" group-title="Movies",Kino Barrandov
-http://83.167.253.107/hdmi1_ext
 #EXTINF:-1 tvg-id="LifeTV.sk" tvg-name="LifeTv" tvg-logo="https://i.imgur.com/jO8kAY2.png" group-title="Religious",LifeTv
 https://lifetv.mpks.sk/s.m3u8
 #EXTINF:-1 tvg-name="Minimax" tvg-logo="https://i.imgur.com/WWOlm1x.png" group-title="Kids",Minimax
@@ -187,8 +185,6 @@ http://88.212.15.19/live/test_history/playlist.m3u8
 https://stream.jc1.cz/hls/jc1.m3u8
 #EXTINF:-1 tvg-name="Jihočeská televize" tvg-logo="https://i.imgur.com/Hi8hZzl.png" group-title="General",Jihočeská televize
 https://vysilani.zaktv.cz/broadcast/hls/jtv/index.m3u8
-#EXTINF:-1 tvg-id="Kino.Barrandov.HD.sk" tvg-name="Kino Barrandov" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Kino_Barrandov_logo.png/960px-Kino_Barrandov_logo.png" group-title="Movies",Kino Barrandov
-http://83.167.253.107/hdmi1_ext
 #EXTINF:-1 tvg-name="Minimax" tvg-logo="https://i.imgur.com/WWOlm1x.png" group-title="Kids",Minimax
 http://88.212.15.19/live/test_minimax/playlist.m3u8
 #EXTINF:-1 tvg-id="MŇAU.cz" tvg-name="Mňau TV" tvg-logo="https://i.imgur.com/deVHJKS.png" group-title="Undefined",Mňau TV
