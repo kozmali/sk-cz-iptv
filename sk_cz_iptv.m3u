@@ -261,12 +261,8 @@ https://ocko-live.ssl.cdn.cra.cz/channels/ocko_expres/playlist.m3u8
 https://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist.m3u8
 #EXTINF:-1 tvg-id="Óčko.Star.cz" tvg-name="Ocko Star" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/%C3%93%C4%8Dko_Star_logo.png/960px-%C3%93%C4%8Dko_Star_logo.png" group-title="Music",Ocko Star
 https://dash4.antik.sk/live/test_ocko_star/playlist.m3u8
-#EXTINF:-1 tvg-name="OIK TV" tvg-logo="https://i.imgur.com/1mXxQ02.png" group-title="General",OIK TV
-https://streamer05.low-latency.cz/oiktv/index.m3u8
 #EXTINF:-1 tvg-id="ČRoPlzeň.cz" tvg-name="Plzeň TV" tvg-logo="https://i.imgur.com/TxLKSqL.png" group-title="General",Plzeň TV
 https://vysilani.zaktv.cz/broadcast/hls/ptv/index.m3u8
-#EXTINF:-1 tvg-name="Polar2 TV" tvg-logo="https://i.imgur.com/hCPiMYZ.png" group-title="General",Polar2 TV
-https://stream.polar.cz/polar2/polarlive2-1/playlist.m3u8
 #EXTINF:-1 tvg-id="POLAR.cz" tvg-name="Polar TV" tvg-logo="https://i.imgur.com/pTJHIX1.png" group-title="General",Polar TV
 https://stream.polar.cz/polar/polarlive-1/playlist.m3u8
 #EXTINF:-1 tvg-id="Prima.cz" tvg-name="Prima" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Prima_2013.png/960px-Prima_2013.png" group-title="Undefined",Prima
